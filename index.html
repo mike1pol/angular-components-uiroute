@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Angular directive routes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+    <script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <style>
+        a {
+            cursor: pointer;
+            color: blue;
+        }
+        a.active {
+            color: #e5e5e5;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div ng-app="app">
+    <div ui-view="menu"></div>
+    <div ui-view="body"></div>
+</div>
+</body>
+
+</html>
+
+
+
